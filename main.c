@@ -25,8 +25,10 @@ int main() {
     }else{
         printf("Sorry, you didnt hit 7... try again..\n");
     }
+    
+
+
+
     return 0;
-
-
 
 }
