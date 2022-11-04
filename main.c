@@ -6,6 +6,16 @@
 # define randnum(min, max) \
     ((rand() % (int)(((max) + 1) - (min))) + (min))
 
+void shoot_loop(int totdice) {
+    char user_input;
+    
+    while(user_input != 'q'){
+        printf("%d is the total number of dice\n", totdice); 
+        printf("q to quit, s to shoot again\n");
+        scanf("%c", &user_input);
+    }
+}
+
 int main() {
     srand(time(NULL));
     int num_dice;
@@ -26,9 +36,11 @@ int main() {
         printf("Sorry, you didnt hit 7... try again..\n");
     }
     
+    shoot_loop(num_dice);
 
 
 
     return 0;
 
 }
+
