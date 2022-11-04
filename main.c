@@ -20,10 +20,12 @@ int main() {
     printf("Shaking the dice now..\n");
     sleep(3);
     printf("Die#1 = %d\nDie#2 = %d\nTotal=%d\n", die1, die2, total);
-
-
-
-
+    if(total==7){
+        printf("You Hit a 7! WOW! YOU WON!");
+    }else{
+        printf("Sorry, you didnt hit 7... try again..\n");
+    }
+    return 0;
 
 
 
