@@ -14,9 +14,13 @@ void shoot_loop(int totdice) {
         printf("q to quit, s to shoot again\n");
         scanf("%c", &user_input);
     }
+    
 }
 
 int main() {
+    clock_t start_t, end_t;
+    start_t = clock();
+    printf("start CPU time = %ld\n", start_t);
     srand(time(NULL));
     int num_dice;
     printf("Lets shoot dice!\n");
@@ -38,8 +42,8 @@ int main() {
     
     shoot_loop(num_dice);
 
-
-
+    end_t = clock();
+    printf("The ending CPU time was == %ld\n", end_t);
     return 0;
 
 }
