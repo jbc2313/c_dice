@@ -16,12 +16,15 @@ void shoot_loop(int totdice) {
         for(int x = 0;x<i;x++){
             dice_arr[x] = randnum(1,6);
         }
-        printf("current user input ==>> %c <<==\n", user_input);
+        //printf("current user input ==>> %c <<==\n", user_input);
+        printf("==========================================\n");
         printf("%d is the total number of dice\n", totdice);
         int z;
         for(z=0;z<i;z++){
             printf("dice#%i ==> %i \n", z+1, dice_arr[z]);
         }
+        printf("----------------------\n");
+        printf("score = %i \n", dice_arr[0]+dice_arr[1]);
         printf("q to quit, s to shoot again\n");
         scanf(" %c", &user_input);
     }
