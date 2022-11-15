@@ -17,7 +17,7 @@ void shoot_loop(int totdice) {
             dice_arr[x] = randnum(1,6);
         }
         //printf("current user input ==>> %c <<==\n", user_input);
-        printf("==========================================\n");
+        printf("============================================\n");
         printf("%d is the total number of dice\n", totdice);
         int z;
         for(z=0;z<i;z++){
