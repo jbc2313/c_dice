@@ -23,7 +23,7 @@ void shoot_loop(int totdice) {
         for(z=0;z<i;z++){
             printf("dice#%i ==> %i \n", z+1, dice_arr[z]);
         }
-        printf("--------------------------\n");
+        printf("-----------------------------\n");
         printf("score = %i \n", dice_arr[0]+dice_arr[1]);
         printf("q to quit, s to shoot again\n");
         scanf(" %c", &user_input);
